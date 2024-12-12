@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Pulse AI" flat="true" />
+    
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Image src="~/assets/logo.png" class="h-32 w-32 self-center mb-8" />
+            
+            <Label text="Welcome to Pulse AI" class="heading-1 text-center mb-2" />
+            <Label text="Your Personal Financial Decision Assistant" class="heading-2 text-center mb-6" />
+            
+            <StackLayout class="card mb-4">
+                <Label text="Make smarter financial decisions" class="heading-2 mb-2" />
+                <Label text="Get AI-powered insights to help you achieve your financial goals" class="body-text" textWrap="true" />
+            </StackLayout>
+            
+            <Button text="Get Started" tap="{{ onGetStarted }}" class="btn-primary mb-4" />
+            <Button text="I already have an account" tap="{{ onLogin }}" class="-outline" />
+            
+            <Label text="By continuing, you agree to our Terms of Service and Privacy Policy" class="text-center text-gray-500 mt-4" textWrap="true" />
+        </StackLayout>
+    </ScrollView>
+</Page>
